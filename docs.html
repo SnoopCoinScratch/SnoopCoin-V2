@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ScratchGems API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .endpoint {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-left: 5px solid #3498db;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .method {
+            font-weight: bold;
+        }
+        code {
+            background-color: #eef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>ScratchGems API Documentation</h1>
+
+    <div class="endpoint">
+        <p><span class="method">GET</span> <code>/</code></p>
+        <p>Returns API version, current server time, user count, and total balance.</p>
+    </div>
+
+    <div class="endpoint">
+        <p><span class="method">GET</span> <code>/users</code></p>
+        <p>Returns a list of all registered users.</p>
+    </div>
+
+    <div class="endpoint">
+        <p><span class="method">GET</span> <code>/balances</code></p>
+        <p>Returns all user balances.</p>
+    </div>
+
+    <div class="endpoint">
+        <p><span class="method">GET</span> <code>/users/&lt;username&gt;</code></p>
+        <p>Returns the balance for a specific user.</p>
+    </div>
+
+    <div class="endpoint">
+        <p><span class="method">GET</span> <code>/verify</code></p>
+        <p>Simple verification endpoint to check if the API is live.</p>
+    </div>
+
+    <div class="endpoint">
+        <p><span class="method">GET</span> <code>/transactions</code></p>
+        <p>Returns all transactions.</p>
+    </div>
+
+    <div class="endpoint">
+        <p><span class="method">GET</span> <code>/transactions/&lt;username&gt;</code></p>
+        <p>Returns transactions involving a specific user.</p>
+    </div>
+
+    <div class="endpoint">
+        <p><span class="method">GET</span> <code>/notifications/&lt;username&gt;</code></p>
+        <p>Returns notifications for a specific user.</p>
+    </div>
+</body>
+</html>
